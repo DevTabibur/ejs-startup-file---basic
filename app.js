@@ -13,14 +13,28 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 // for home directory and list.ejs file it's rendering
-app.get("/", (req, res) => {
-  res.render("home");
+app.get("/home", (req, res) => {
+  res.render("home.ejs");
 });
 
-// for menu directory and menu.ejs file rendering
-// app.get("/", (req, res) => {
-//     res.render("menu.ejs")
-// })
+// about page route
+app.get("/about", (req, res) => {
+  res.render("about.ejs")
+})
+// contact page route
+app.get("/contact", (req, res) => {
+  res.render("contact.ejs")
+})
+
+// blog page route
+app.get("/blog", (req, res) => {
+  res.render("blog.ejs")
+})
+
+// contact page route
+app.get("/portfolio", (req, res) => {
+  res.render("portfolio.ejs")
+})
 
 // live server on port 3000
 app.listen(3000, () => {

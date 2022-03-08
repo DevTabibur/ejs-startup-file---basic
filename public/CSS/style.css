@@ -1,3 +1,4 @@
+/* header menu template */
 .heading{
     color: red;
     background: #010101;
@@ -22,6 +23,7 @@ li{
 ul li a{
     text-decoration: none;
 }
+/* footer template */
 footer{
     background: #000;
     padding: 100px 0;
@@ -32,9 +34,13 @@ footer h3{
     font-weight: 900;
     font-size: 30px;
 }
+
 /* Home Page */
 .home-title{
     color: #690000;
     background: rgb(250, 228, 130);
     text-align: center;
+}
+h1{
+    color: rgb(0, 26, 255);
 }
